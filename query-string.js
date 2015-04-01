@@ -32,7 +32,7 @@
 
 			if (!ret.hasOwnProperty(key)) {
 				ret[key] = val;
-			} else if (ret[key] instanceof ret[key]) {
+			} else if (ret[key] instanceof Array) {
 				ret[key].push(val);
 			} else {
 				ret[key] = [ret[key], val];
